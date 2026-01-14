@@ -1,0 +1,26 @@
+.top-header{
+  background-color: #f8b864;
+  color: white;
+}
+
+
+.left-info li,.right-info li{
+  list-style: none;
+}
+.left-info a,.right-info a{
+  text-decoration: none;
+  color: white;
+}
+
+@media(min-width:430px){
+.left-info{
+  display: flex;
+  flex-direction: row !important;
+}
+}
+
+@media(max-width:410px){
+  .left-info{
+    display: block !important;
+  }
+}
