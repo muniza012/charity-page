@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charity || NGO</title>
+    <!-- animate.css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- font awesome cdn -->
     <link
@@ -30,22 +35,42 @@
       <!-- top-header starts -->
       <div class="top-header">
         <div class="container pt-3">
-  <div class="row ">
-          <div class="col-12 col-md-8 ">
-            <ul class="left-info d-flex  gap-3 ">
-              <li><a href="#"><i class="fa-regular fa-envelope pe-4"></i>Info@YourDomain.com</a></li>
-              <li><a href="#"><i class="fa-solid fa-mobile-screen"></i>+(333) 052 39876</a></li>
-            </ul>
-          </div>
-           <div class="col-sm-4 d-none d-md-block">
-            <ul class="right-info d-flex gap-2">
-              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-           </div>
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <ul class="left-info d-flex gap-3">
+                <li>
+                  <a href="#"
+                    ><i class="fa-regular fa-envelope pe-4"></i
+                    >Info@YourDomain.com</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-mobile-screen"></i>+(333) 052
+                    39876</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+              <ul class="right-info d-flex gap-2">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -53,14 +78,170 @@
 
       <!-- bottom-header starts -->
       <div class="bottom-header">
-         <div class="container-lg">
-        
-
-        </div>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img src="./assets/home/logo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler d-md-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-lg-5 ps-lg-5 mb-2 mb-lg-0">
+                <li class="nav-item position-relative home">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                  <div class="home-options">
+                    <p>Home Default</p>
+                    <p>Home Modern</p>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="#"
+                    >Causes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="#"
+                    >Event</a
+                  >
+                </li>
+                <li class="nav-item position-relative pages">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="#"
+                    >Pages</a
+                  >
+                  <div class="home-options">
+                    <p>Gallery</p>
+                    <p>volunteers</p>
+                  </div>
+                </li>
+                <li class="nav-item position-relative blog">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="#"
+                    >Blog</a
+                  >
+                  <div class="home-options">
+                    <p>Blog Grid</p>
+                    <p>Blog Left Sidebar</p>
+                    <p>Blog Right Sidebar</p>
+                    <p>Blog Single</p>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="#"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
       <!-- bottom-header ends -->
     </header>
     <!-- header ends -->
+
+    <!-- slider section starts -->
+    <section class="slider-section">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/home/slider-1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-block">
+              <h2 class="animate__animated animate__fadeInDown">
+                Together we can make a difference
+              </h2>
+              <p class="animate__animated animate__fadeInUp">
+                Help today because tomorrow you may be the one who needs
+                helping! Forget what you can get and see what you can give.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/home/slider-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-block">
+              <p>Join Us Today</p>
+              <h2 class="animate__animated animate__slideInRight">
+                Better life for People
+              </h2>
+              <p class="animate__animated animate__fadeInUp">
+                Help today because tomorrow you may be the one who needs
+                helping! Forget what you can get and see what you can give.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/home/slider-3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-block">
+              <p>Join US Today</p>
+              <h2 class="change-little mx-auto">Give a little .Change a lot</h2>
+              <p class="animate__animated animate__fadeInDown">
+                Help today because tomorrow you may be the one who needs
+                helping! Forget what you can get and see what you can give.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- slider section ends -->
+
+    <!-- promo section starts -->
+     <section class="promo-section">
+
+      
+     </section>
+    <!-- promo section ends -->
 
     <!-- bootstrap js cdn -->
     <script

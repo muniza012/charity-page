@@ -1,26 +1,109 @@
-.top-header{
+.top-header {
   background-color: #f8b864;
   color: white;
 }
 
-
-.left-info li,.right-info li{
+.left-info li,
+.right-info li {
   list-style: none;
 }
-.left-info a,.right-info a{
+.left-info a,
+.right-info a {
   text-decoration: none;
   color: white;
 }
 
-@media(min-width:430px){
-.left-info{
-  display: flex;
-  flex-direction: row !important;
+.home-options {
+  position: absolute;
+  /* background-color: #f8b864; */
+  padding: 0 2em;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(20px);
+  background-color: white;
+  visibility: hidden;
+  transition: opacity 0.5s ease, transform 0.7s ease, visibility 0.3s;
 }
+.home:hover .home-options,
+.pages:hover .home-options,
+.blog:hover .home-options {
+  max-height: 200px;
+  opacity: 1;
+  visibility: visible;
+  white-space: nowrap;
+  transform: translateY(0);
+}
+.bottom-header .nav-item > a {
+  color: #000;
+  transition: color 0.4s ease;
 }
 
-@media(max-width:410px){
-  .left-info{
+.bottom-header .nav-item:hover > a {
+  color: #f8b864 !important;
+}
+.home-options p:hover {
+  color: #f8b864 !important;
+  cursor: pointer;
+}
+/* header ends */
+
+/* slider starts */
+.change-little {
+  width: 27ch; 
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #000;
+ 
+  animation: typing 4s steps(25) 1s 1 forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 27ch; }
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.carousel-inner{
+  height: 300px !important;
+}
+.carousel-item{
+  height: 100%;
+}
+.carousel-item img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+.animate__animated{
+  animation-duration:2s !important ;
+} 
+/* slider ends */
+
+/* promo section starts */
+
+
+
+/* promo section ends */
+
+@media (min-width: 430px) {
+  .left-info {
+    display: flex;
+    flex-direction: row !important;
+  }
+}
+
+@media (max-width: 410px) {
+  .left-info {
     display: block !important;
+  }
+}
+
+@media (max-width: 995px) {
+  .home-options {
+    display: none;
+    pointer-events: none;
   }
 }
