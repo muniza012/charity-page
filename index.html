@@ -37,7 +37,7 @@
         <div class="container pt-3">
           <div class="row">
             <div class="col-12 col-md-8">
-              <ul class="left-info d-flex gap-3">
+              <ul class="left-info g-3">
                 <li>
                   <a href="#"
                     ><i class="fa-regular fa-envelope pe-4"></i
@@ -53,7 +53,7 @@
               </ul>
             </div>
             <div class="col-md-4 d-none d-md-block">
-              <ul class="right-info d-flex gap-2">
+              <ul class="right-info d-flex align-content-end gap-2">
                 <li>
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 </li>
@@ -70,6 +70,11 @@
                   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </li>
               </ul>
+              <div class="div">
+                <button class="btn btn-lg donate-btn d-block d-md-none">
+                  DONATE NOW
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -192,13 +197,21 @@
             <div
               class="carousel-caption d-flex flex-column align-content-center justify-content-center h-100"
             >
-              <h2 class="animate__animated animate__fadeInDown display-3 fw-semibold">
+              <h2
+                class="animate__animated animate__fadeInDown display-3 fw-semibold"
+              >
                 Together we can make a difference
               </h2>
               <p class="animate__animated animate__fadeInUp">
                 Help today because tomorrow you may be the one who needs
                 helping! Forget what you can get and see what you can give.
               </p>
+              <div
+                class="btns animate__animated animate__fadeInUp d-flex flex-column flex-sm-row align-content-center justify-content-center gap-3"
+              >
+                <button class="btn btn-md join-btn">JOIN WITH US</button>
+                <button class="btn btn-md donate-btn">DONATE NOW</button>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -207,15 +220,25 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-flex flex-column align-content-center justify-content-center h-100">
+            <div
+              class="carousel-caption d-flex flex-column align-content-center justify-content-center h-100"
+            >
               <p>Join Us Today</p>
-              <h2 class="animate__animated animate__slideInRight display-3 fw-semibold">
+              <h2
+                class="animate__animated animate__slideInRight display-3 fw-semibold"
+              >
                 Better life for People
               </h2>
               <p class="animate__animated animate__fadeInUp">
                 Help today because tomorrow you may be the one who needs
                 helping! Forget what you can get and see what you can give.
               </p>
+              <div
+                class="btns animate__animated animate__fadeInUp d-flex flex-column flex-sm-row align-content-center justify-content-center gap-3"
+              >
+                <button class="btn btn-md join-btn">JOIN WITH US</button>
+                <button class="btn btn-md donate-btn">DONATE NOW</button>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -224,13 +247,23 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-flex flex-column align-content-center justify-content-center h-100">
+            <div
+              class="carousel-caption d-flex flex-column align-content-center justify-content-center h-100"
+            >
               <p>Join US Today</p>
-              <h2 class="change-little mx-0 mx-md-auto display-3 fw-semibold ">Give a little.Change a lot</h2>
+              <h2 class="change-little mx-0 mx-md-auto display-3 fw-semibold">
+                Give a little.Change a lot
+              </h2>
               <p class="animate__animated animate__fadeInDown">
                 Help today because tomorrow you may be the one who needs
                 helping! Forget what you can get and see what you can give.
               </p>
+              <div
+                class="btns animate__animated animate__fadeInUp d-flex flex-column flex-sm-row align-content-center justify-content-center gap-3"
+              >
+                <button class="btn btn-md join-btn">JOIN WITH US</button>
+                <button class="btn btn-md donate-btn">DONATE NOW</button>
+              </div>
             </div>
           </div>
         </div>
@@ -239,14 +272,11 @@
     <!-- slider section ends -->
 
     <!-- promo section starts -->
-    <section class="promo-section ">
+    <section class="promo-section">
       <div
         class="promo-container p-4 d-flex flex-column flex-sm-row flex-wrap justify-content-center align-items-center gap-4 mx-auto"
       >
-        <div
-          class="card card-dotted  border-0 rounded-0 " style="width: 18rem"
-          
-        >
+        <div class="card card-dotted border-0 rounded-0" style="width: 18rem">
           <div class="card-body p-5">
             <img src="./assets/promo-sec/icon-1.png" alt="" />
             <h5 class="card-title fw-bold py-2">Make Donation</h5>
@@ -257,10 +287,7 @@
           </div>
         </div>
 
-        <div
-          class="card card-dotted  border-0 rounded-0" style="width: 18rem"
-          
-        >
+        <div class="card card-dotted border-0 rounded-0" style="width: 18rem">
           <div class="card-body p-5">
             <img src="./assets/promo-sec/icon-2.png" alt="" />
             <h5 class="card-title fw-bold py-2">Fundraising</h5>
@@ -271,10 +298,7 @@
           </div>
         </div>
 
-        <div
-          class="card  border-0 rounded-0" style="width: 18rem"
-          
-        >
+        <div class="card border-0 rounded-0" style="width: 18rem">
           <div class="card-body p-5">
             <img src="./assets/promo-sec/icon-3.png" alt="" />
             <h5 class="card-title fw-bold py-2">Become a Volunteer</h5>
@@ -348,7 +372,7 @@
                   >Donate Now <i class="fa-solid fa-plus"></i
                 ></a>
 
-                <div class="rect-22 "></div>
+                <div class="rect-22"></div>
                 <div class="outer-circle22">
                   <div class="inner-circle">45%</div>
                 </div>
@@ -415,9 +439,113 @@
     <!-- causes section ends -->
 
     <!-- mission section starts -->
+    <div class="container-fluid mission-sec z-1 position-relative">
+      <div class="shape1"></div>
+      <div class="shape2"></div>
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-sm-6 col-md-4 z-3">
+            <div class="card">
+              <div class="card-body text-center py-4">
+                <div class="img-cont mx-auto">
+                  <img
+                    src="./assets/mission-sec/profile.jpg"
+                    alt=""
+                    width="70px"
+                  />
+                </div>
+                <h5 class="card-title fw-bold py-2">Jonathan Smith</h5>
+                <h6 class="card-subtitle fs-6 text-body-secondary fw-light">
+                  CEO & Founder of Charitify.
+                </h6>
+                <p class="card-text pt-2 text-body-secondary">
+                  The secret to happiness lies in helping others. Never
+                  underestimate the difference YOU can make in the lives of the
+                  poor, the abused and the helpless.
+                </p>
+                <img src="./assets/mission-sec/sign.png" alt="sign" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 z-3">
+            <div class="card">
+              <img
+                src="./assets/mission-sec/history.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Our History</h5>
+                <p class="card-text">
+                  The secret to happiness lies in helping others. Never
+                  underestimate the difference YOU can make in the lives of the
+                  poor
+                </p>
+                <button class="btn btn-sm read-btn">READ MORE</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 z-3">
+            <div class="card">
+              <img
+                src="./assets/mission-sec/mission.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Our History</h5>
+                <p class="card-text">
+                  The secret to happiness lies in helping others. Never
+                  underestimate the difference YOU can make in the lives of the
+                  poor
+                </p>
+                <button class="btn btn-sm read-btn">READ MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    
-    <!-- mission section endss -->
+    <!-- mission section ends -->
+
+    <!-- campaign sec starts -->
+    <div class="container-fluid campaign-sec">
+      <div class="container d-flex flex-column flex-md-row gap-0 gap-md-4">
+        <div class="d-block py-5 campaign-content position-relative">
+          <button class="btn btn-md featured-btn fw-semibold">
+            Featured Campaigns
+          </button>
+          <h3 class="fw-bold text-light py-3">
+            Featured project to built a School.
+          </h3>
+          <p class="text-light">
+            The secret to happiness lies in helping others. Never underestimate
+            the difference YOU can make in the lives of the poor, the abused and
+            the helpless.
+          </p>
+          <div class="progress-bar my-3">
+            <div class="progress-fill"></div>
+            <div class="outer-circle4 position-absolute">
+              <div class="inner-circle fw-semibold">35%</div>
+            </div>
+          </div>
+          <div class="stats py-4 d-flex flex-md-column gap-2 fw-semibold">
+            <p class="fs-6 text-light"><i class="fa-solid text-light fa-chart-column  "></i>Goal: $45000</p>
+            <p class="fs-6 text-light"><i class="fa-regular fa-thumbs-up text-light pe-4"></i>Raised: $5000</p>
+          </div>
+          <button class="btn btn-md donate-btn d-block d-md-none">
+            DONATE NOW
+          </button>
+        </div>
+        <div class="campaign-img position-relative d-flex justify-content-center align-items-center w-100"  >
+          <img class="img-fluid position-relative " src="./assets/campaign-sec/video.jpg" alt="">
+               <a class="img-popup vbox-item text-decoration-none bg-transparent" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=_IlLwfC2dNc"><i class="fa-solid fa-play text-light"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- campaign sec ens-->
 
     <!-- bootstrap js cdn -->
     <script
