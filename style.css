@@ -201,7 +201,7 @@ left: 73%;
   border-radius: 50%;
 overflow: hidden;
 }
-.mission-sec{
+.mission-sec,.volunteer-sec{
  padding:7em 0 !important ;
  overflow: hidden;
 }
@@ -278,6 +278,14 @@ width: 70px;
   left: 45%;
 }
 /* campaign sec endss */
+
+
+/* volunteer sec starts */
+
+
+
+/* volunteer sec ends */
+
 
 /* media queries */
 @media(min-width:992px){
