@@ -50,24 +50,28 @@
 
 /* slider starts */
 .change-little {
-  width: 27ch; 
+  width: 0; 
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #000;
- 
-  animation: typing 4s steps(25) 1s 1 forwards, blink 0.7s step-end infinite;
+    box-sizing: content-box;
+  border-right: 2px solid #f5eeee; 
+  animation: typing 3s steps(36) forwards; 
+}
+
+@media (max-width: 400px) {
+  .change-little {
+    font-size: 22px;
+  }
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 24ch; }
-}
-@keyframes blink {
-  50% { border-color: transparent; }
+  to   { width:100%; } 
 }
 
+
 .carousel-inner{
-  height: 300px !important;
+  height: 530px !important;
 }
 .carousel-item{
   height: 100%;
@@ -84,9 +88,15 @@
 
 /* promo section starts */
 
-.promo-sec{
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+.promo-container {
+  background-color: #fff; /* background is needed for shadow to be visible */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* shadow */
+  border-radius: 12px; /* optional rounded corners */
+
+  max-width: 1000px; /* container width, adjust as needed */
 }
+
+
 
 /* promo section ends */
 .causes{
@@ -104,33 +114,53 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
   
 }
 .donate{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
   position: absolute;
+   font-size: 14px;
   text-decoration: none;
   color: white;
   background-color: #f8b864a1;
-  padding: 2px;
-  bottom:440px ;
-left: 160px;
+ padding:4px 8px; 
+ top: 10px;       /* distance from top of .thumb */
+  right: 10px;  
 border-radius: 5px;
+white-space: nowrap;  
 }
-.rect-2{
+.rect-2,.rect-22,.rect-23{
   width: 25%;
   height: 14px;
   background-color: #f8b864;
   position: absolute;
-  bottom: 60%;
+bottom: -1px;
 }
-.outer-circle{
+.rect-22{
+    width: 45%;
+ 
+}
+.rect-23{
+  width: 75%;
+}
+
+.outer-circle,.outer-circle22,.outer-circle23{
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #f8b86483;
   position: absolute;
- bottom: 57%;
- left: 20%;
+bottom: -17px;
+left: 23%;
     display: flex;
  align-items: center;
  justify-content: center;
+}
+.outer-circle22{
+left: 43%;
+}
+.outer-circle23{
+left: 73%;
 }
 
 .inner-circle{
@@ -142,7 +172,7 @@ border-radius: 5px;
  display: flex;
  align-items: center;
  justify-content: center;
- margin: 0 auto;
+
  color: white;
  
 }
@@ -151,6 +181,8 @@ border-radius: 5px;
 }
 .stats p{
   color: #8a8987;
+  font-size: 12px;
+  white-space: nowrap;
 }
 .stats i{
   color: #f8b864;
@@ -160,8 +192,8 @@ border-radius: 5px;
 
 /* media queries */
 @media(min-width:992px){
-  .promo-sec{
-  transform: translateY(-100px);
+  .promo-container{
+  transform: translateY(-70px);
   position: relative;
   z-index: 100;
   background-color: white;
@@ -192,4 +224,10 @@ border-radius: 5px;
     pointer-events: none;
   }
   
+}
+@media (max-width:575px){
+  .donate{
+
+padding: 6px 10px;
+  }
 }
