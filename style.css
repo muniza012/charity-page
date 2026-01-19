@@ -202,6 +202,7 @@ left: 73%;
 overflow: hidden;
 }
 .mission-sec,.volunteer-sec{
+  background-color: rgb(242, 242, 242);
  padding:7em 0 !important ;
  overflow: hidden;
 }
@@ -281,13 +282,57 @@ width: 70px;
 
 
 /* volunteer sec starts */
-
-
+.check-list p{
+  color: #727170;
+}
+.check-list i{
+  color: #f8b864;
+  
+}
 
 /* volunteer sec ends */
 
+/* counter sec starts */
+.counter-sec{
+ min-height: 400px;
+ background:
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url('./assets/mission-sec/mission.jpg');background-repeat: no-repeat;
+background-size: cover;
+background-position-x: 50%;
+background-position-y: 50%;
+display: grid;
+  place-items: center;
+}
+.counter-sec h3{
+  color: #f8b864;
+  font-weight: 700 !important;
+  font-size: 3em;
+}
+
+ .counter-sec h4 {
+  min-height: 3em; /* adjust as needed */
+
+}
+
+/* counter sec ends */
+
+/* enent sec starts */
+.events-sec{
+  background-color: #f5eeee;
+}
+.image img {
+  width: 100%;
+  height: auto; /* keeps aspect ratio */
+  display: block; /* removes tiny inline spacing */
+}
+
+
+/* enent sec ends */
 
 /* media queries */
+
+
 @media(min-width:992px){
   .promo-container{
   transform: translateY(-70px);
@@ -327,10 +372,19 @@ width: 70px;
 
 padding: 6px 10px;
   }
+
+  .counter-sec{
+    font-size: 1em !important;
+  }
 }
 @media(min-width:768px){
   .campaign-content,.campaign-img{
   width: 50% !important;
 }
 
+}
+@media (max-width:767px){
+  .mission-sec,.volunteer-sec{
+  padding: 4em 0 !important;
+  }
 }
