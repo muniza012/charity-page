@@ -182,7 +182,7 @@ left: 73%;
  color: white;
  
 }
-.read-more{
+.read-more,.time{
   color: #999794;
 }
 .stats p{
@@ -329,6 +329,64 @@ display: grid;
 
 
 /* enent sec ends */
+
+/* testimonial sec starts */
+.testimonial-item{
+  max-width: 300px;
+  background-color: rgb(250, 250, 250);
+  padding: 1em;
+}
+.develop{
+  color: #999794;
+  font-size: 0.6em;
+}
+
+
+/* testimonial sec ends */
+
+/* recent stories starts */
+.recent-stories{
+  background-color:#dfdddb;;
+}
+.recent-stories .stories-content:hover{
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.stories-content p{
+font-size: 0.9em;
+}
+/* recent stories ends */
+
+/* footer starts */
+.footer{
+  background-color: rgb(34, 34, 34);
+}
+ .footer p,.footer a,.address{
+  color: rgb(153, 153, 153);
+ }
+ .footer li i{
+  color: #f8b864;
+ }
+
+ .footer li i:hover{
+  color: white;
+ }
+ .footer ul{
+  padding: 0 !important;
+ }
+ .footer li a{
+  text-decoration: none;
+
+ }
+ .footer li a:hover{
+  text-decoration: underline;
+  color: #f8b864;
+ }
+ .footer .address li{
+  list-style-type: none;
+  
+ }
+ 
+/* footer ends */
 
 /* media queries */
 
